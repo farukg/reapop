@@ -19,46 +19,7 @@ function createTimer(dismissAfter, callback) {
 }
 
 export class Notification extends Component {
-  static propTypes = {
-    className: PropTypes.shape({
-      main: PropTypes.string.isRequired,
-      wrapper: PropTypes.string.isRequired,
-      meta: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      message: PropTypes.string.isRequired,
-      imageContainer: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      icon: PropTypes.string.isRequired,
-      status: PropTypes.func.isRequired,
-      dismissible: PropTypes.string.isRequired,
-      closeButtonContainer: PropTypes.string.isRequired,
-      closeButton: PropTypes.string.isRequired,
-      buttons: PropTypes.func.isRequired,
-      button: PropTypes.string.isRequired,
-      buttonText: PropTypes.string.isRequired
-    }).isRequired,
-    notification: PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
-      title: PropTypes.string,
-      message: PropTypes.string,
-      image: PropTypes.string,
-      status: PropTypes.string.isRequired,
-      position: PropTypes.oneOf(mapObjectValues(POSITIONS)),
-      dismissAfter: PropTypes.number.isRequired,
-      dismissible: PropTypes.bool.isRequired,
-      onAdd: PropTypes.func,
-      onRemove: PropTypes.func,
-      closeButton: PropTypes.bool.isRequired,
-      buttons: PropTypes.arrayOf(
-        PropTypes.shape({
-          name: PropTypes.string.isRequired,
-          onClick: PropTypes.func
-        })
-      ).isRequired,
-      allowHTML: PropTypes.bool.isRequired
-    }).isRequired,
-    removeNotification: PropTypes.func.isRequired
-  };
+  
 
   /**
    * Init timer
